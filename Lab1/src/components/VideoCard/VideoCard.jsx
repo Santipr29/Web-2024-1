@@ -1,4 +1,5 @@
 import React from "react"
+
 export function VideoCard(props){
     const {link, img, title, channel, views, date} = props
     return(
