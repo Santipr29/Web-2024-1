@@ -5,6 +5,7 @@ import { CategoryBtn } from '../CategoryBtn/CategoryBtn'
 export default function VideoSection(){
     return(
       <>
+      <section>
         <section class="categories">
           <CategoryBtn name="All"></CategoryBtn>
           <CategoryBtn name="Music"></CategoryBtn>
@@ -38,6 +39,7 @@ export default function VideoSection(){
           <VideoCard link="https://www.youtube.com/embed/hUOfC2ilXak?si=ZGuQVZq2fGR9mg68" img="https://yt3.ggpht.com/ytc/AIf8zZRX_YpYUwxpBiB45JDkgVKaHEcHAxn1Oml0iedPKQ=s48-c-k-c0x00ffffff-no-rj" title="10 Minutes Of Stephen Curry Being A Literal God" channel="MaxaMillion711" views="402K views" date="4 months ago"></VideoCard>
           <VideoCard link="https://www.youtube.com/embed/K3l7_v4mcWk?si=PpB2QwEZrW4FDDEL" img="https://yt3.ggpht.com/vsO4bjhupUDjyfL5Tq2ztztdNyoPCj6Rb9g81SNj9DdbhALq0tdaHLz71TwfMt6ZXytjlns4=s48-c-k-c0x00ffffff-no-rj" title="¿Que tan bueno era Johan Cruyff?" channel="La Biblia del Futbol" views="147K views" date="2 months ago"></VideoCard>
         </section>
+      </section>
       </>
     )
 }
