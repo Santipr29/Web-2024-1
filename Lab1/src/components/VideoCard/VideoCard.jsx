@@ -5,11 +5,11 @@ export function VideoCard(props){
     return(
         <article>
             <iframe src={link}></iframe>
-            <section class="description">
-                <section class="left">
+            <section className="description">
+                <section className="left">
                     <img src={img}></img>
                 </section>
-                <section class="right">
+                <section className="right">
                     <h3>{title}</h3>
                     <p>{channel}</p>
                     <p>{views}-{date}</p>

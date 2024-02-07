@@ -6,7 +6,7 @@ export default function VideoSection(){
     return(
       <>
       <section>
-        <section class="categories">
+        <section className="categories">
           <CategoryBtn name="All"></CategoryBtn>
           <CategoryBtn name="Music"></CategoryBtn>
           <CategoryBtn name="Gaming"></CategoryBtn>
@@ -20,7 +20,7 @@ export default function VideoSection(){
           <CategoryBtn name="Watched"></CategoryBtn>
           <CategoryBtn name="New to you"></CategoryBtn>
         </section>
-        <section class="videos">
+        <section className="videos">
           <VideoCard link="https://www.youtube.com/embed/ya1_Y_OLD0g?si=T3KufXVIdqZxHzF-" img="https://yt3.ggpht.com/f75G_XKaKml0FciSTheG7q2OdBNXvCpUe6-5KiT-hGFQ8Oign80L6yuZl49sv8rVWM16MEZ89g=s48-c-k-c0x00ffffff-no-nd-rj" title="PASIEMPRE - Tainy, Arcangel, Myke Towers, Jhayco, Omar Courtz, Arca (Official Visualizer)" channel="Tainy" views="24M views" date="7 months ago"></VideoCard>
           <VideoCard link="https://www.youtube.com/embed/wOLMC6XtZVo?si=MGI6p-9AguLOHXQD" img="https://yt3.ggpht.com/3ondwJtqgg_1YlfjFd_KJMQ-Q4bz764TiYlsZc0kKwsU5FQghNUwalM0jnnPo7WysTCOWkQQIg=s48-c-k-c0x00ffffff-no-rj" title="¡LOS GUNNERS SE QUEDARON CON EL CLÁSICO Y SE ACERCAN A LA CIMA! | Arsenal 3-1 Liverpool RESUMEN" channel="ESPN Fans" views="27K views" date="27 minutes ago"></VideoCard>
           <VideoCard link="https://www.youtube.com/embed/krsBRQbOPQ4?si=idJkE4tj3Fd1GokV" img="https://yt3.ggpht.com/fxGKYucJAVme-Yz4fsdCroCFCrANWqw0ql4GYuvx8Uq4l_euNJHgE-w9MTkLQA805vWCi-kE0g=s48-c-k-c0x00ffffff-no-rj" title="$1 vs $250,000,000 Private Island!" channel="MrBeast" views="105M views" date="8 days ago"></VideoCard>

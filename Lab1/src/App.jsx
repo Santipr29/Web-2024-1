@@ -6,7 +6,6 @@ import VideoSection from './components/VideoSection/VideoSection'
 export default function App(){
     return(
       <>
-      <h1>Hola mundo</h1>
       <NavBar></NavBar>
       <section>
         <MainSections></MainSections>

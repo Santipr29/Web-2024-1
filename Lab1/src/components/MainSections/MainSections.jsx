@@ -7,7 +7,7 @@ export default function MainSections(){
       <>
       <section>
       <SectionBtn image="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Home-icon.svg/800px-Home-icon.svg.png" title="Home"></SectionBtn>
-      <SectionBtn image="https://qph.cf2.quoracdn.net/main-qimg-c74aff21c115bb4fec316d43686321f2" title="Shorts"></SectionBtn>
+      <SectionBtn image="https://freelogopng.com/images/all_img/1685029929youtube-shorts-logo-black.png" title="Shorts"></SectionBtn>
       <IconBtn image="https://cdn-icons-png.flaticon.com/512/16/16057.png"></IconBtn>
       <SectionBtn image="https://cdn.icon-icons.com/icons2/3237/PNG/512/menu_youtube_social_media_subs_subscription_icon_197393.png" title="Subscriptions"></SectionBtn>
       <SectionBtn image="https://static.thenounproject.com/png/5672354-200.png" title="You"></SectionBtn>
