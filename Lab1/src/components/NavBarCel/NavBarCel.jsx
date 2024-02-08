@@ -1,11 +1,11 @@
 import React from 'react'
 import { IconBtn } from '../IconBtn/IconBtn'
-import "./NavBar.css"
+import "./NavBarCel.css"
 
 export default function NavBarCel(){
     return(
       <>
-      <section className="main">
+      <section className="mainphone">
         <section className="left">
             <IconBtn className="yt" image="https://ongpng.com/wp-content/uploads/2023/04/3.youtube-logo-2416x776-1.png"></IconBtn>
         </section>
