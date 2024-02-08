@@ -17,9 +17,7 @@ export default function NavBar(){
         </section>
         <section className="right">
             <IconBtn className="upload" image="https://cdn.iconscout.com/icon/free/png-256/free-upload-1438217-1216178.png"></IconBtn>
-            <IconBtn className="share" image="https://static.thenounproject.com/png/3388431-200.png"></IconBtn>
             <IconBtn className="notifications" image="https://www.shareicon.net/data/512x512/2017/02/15/878700_alert_512x512.png"></IconBtn>
-            <IconBtn className="search2" image="https://cdn.iconscout.com/icon/free/png-256/free-search-1990-1174913.png"></IconBtn>
             <IconBtn className="profile" image="https://yt3.ggpht.com/I0yZzIyRQZ9PHPBA5yGbUnOHu6wt0vr1ONYvcwYwW2PKiVdCqOsibQ1579J5CAoS7BY_Mf7FHqo=s68-c-k-c0x00ffffff-no-rj"></IconBtn>
         </section>
       </section>
