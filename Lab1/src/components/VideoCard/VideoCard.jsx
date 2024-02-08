@@ -11,8 +11,10 @@ export function VideoCard(props){
                 </section>
                 <section className="right">
                     <h3>{title}</h3>
-                    <p>{channel}</p>
-                    <p>{views}-{date}</p>
+                    <section className="rightbot">
+                        <p>{channel}</p>
+                        <p>{views}-{date}</p>
+                    </section>
                 </section>
             </section>
         </article>
