@@ -4,3 +4,7 @@
     min-height: 50px;
     max-height: 50px;
 }
+
+.list{
+    display: none;
+}
