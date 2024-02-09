@@ -1,6 +1,7 @@
 import React from 'react'
 import { VideoCard } from '../VideoCard/VideoCard'
 import { CategoryBtn } from '../CategoryBtn/CategoryBtn'
+import "./VideoSection.css"
 
 export default function VideoSection(){
     return(

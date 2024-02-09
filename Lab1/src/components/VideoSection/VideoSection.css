@@ -1,0 +1,9 @@
+.categories{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    overflow-x: overlay;
+    width: 100vi;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}

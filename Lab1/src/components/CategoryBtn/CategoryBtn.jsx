@@ -1,9 +1,10 @@
 import React from "react"
+import "./CategoryBtn.css"
 
 export function CategoryBtn(props){
     const {name} = props
     return(
-        <button>
+        <button className="category">
             <p>{name}</p>
         </button>
     )
