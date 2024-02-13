@@ -1,9 +1,10 @@
 import React from "react"
+import "./VideoCard.css"
 
 export function VideoCard(props){
     const {link, img, title, channel, views, date} = props
     return(
-        <article>
+        <article className="video-card">
             <iframe src={link}></iframe>
             <section className="description">
                 <section className="left">
@@ -13,7 +14,7 @@ export function VideoCard(props){
                     <h3>{title}</h3>
                     <section className="rightbot">
                         <p>{channel}</p>
-                        <p>{views}-{date}</p>
+                        <p>{views} - {date}</p>
                     </section>
                 </section>
             </section>

@@ -1,0 +1,43 @@
+.video-card{
+    margin-bottom: 25px;
+}
+
+iframe{
+    width: 100vi;
+    height: 190px;
+    margin-left: -10px;
+}
+
+.description{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+}
+
+.left img{
+    border-radius: 50%;
+    width: 35px;
+}
+
+.right{
+    margin-left: 15px;
+}
+
+.right h3{
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 16px;
+}
+
+.rightbot{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+    gap: 10px;
+}
+
+.rightbot p{
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 14px;
+}
