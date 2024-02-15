@@ -34,3 +34,14 @@
     border-radius: 50%;
     background-color: white;
 }
+
+.add{
+    background-color: white;
+    border: none;
+    border-radius: 50%;
+}
+
+.add img{
+    width: 30px;
+    height: 30px;
+}

@@ -2,4 +2,9 @@
     display: flex;
     flex-direction: row;
     width: 100vi;
+    height: 35px;
+    gap: 25px;
+    align-items: center;
+    border-top: 1px solid grey;
 }
+

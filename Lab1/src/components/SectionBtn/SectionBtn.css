@@ -1,0 +1,15 @@
+.section-btn{
+    box-sizing: content-box;
+    background-color: white;
+    border: none;
+}
+
+.section-img{
+    width: 20px;
+    height: 20px;
+}
+
+.section-btn p{
+    margin: 0;
+    font-size: 12px;
+}
