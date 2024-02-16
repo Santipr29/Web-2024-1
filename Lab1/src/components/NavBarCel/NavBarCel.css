@@ -1,3 +1,9 @@
+.navbar-phone{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
 .main-phone{
     display: flex;
     flex-direction: row;
@@ -5,6 +11,17 @@
     margin-left: -2px;
     position: fixed;
     top: 0;
+}
+
+.categories{
+    display: flex;
+    flex-direction: row;
+    gap: 7px;
+    overflow-x: overlay;
+    width: 100vi;
+    margin-top: 28px;
+    position: fixed;
+    background-color: white;
 }
 
 .left-phone{
