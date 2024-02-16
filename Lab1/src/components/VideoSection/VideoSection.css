@@ -4,6 +4,11 @@
     gap: 7px;
     overflow-x: overlay;
     width: 100vi;
-    margin-top: 8px;
-    margin-bottom: 5px;
+    margin-top: 25px;
+    position: fixed;
+    background-color: white;
+}
+
+.videos{
+    margin-top: 65px;
 }

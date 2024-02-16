@@ -1,8 +1,10 @@
 .main-phone{
     display: flex;
     flex-direction: row;
+    background-color: white;
     margin-left: -2px;
-
+    position: fixed;
+    top: 0;
 }
 
 .left-phone{
