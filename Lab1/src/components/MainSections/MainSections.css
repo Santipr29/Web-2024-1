@@ -2,9 +2,8 @@
     display: flex;
     flex-direction: row;
     width: 100vi;
-    height: 35px;
-    gap: 25px;
-    align-items: center;
+    height: 40px;
+    justify-content: space-between;
     border-top: 1px solid grey;
 }
 

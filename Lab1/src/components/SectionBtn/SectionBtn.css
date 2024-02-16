@@ -2,9 +2,14 @@
     box-sizing: content-box;
     background-color: white;
     border: none;
+    margin-top: 5px;
 }
 
-.section-img{
+#profile-phone{
+    border-radius: 50%;
+}
+
+.section-btn img{
     width: 20px;
     height: 20px;
 }
