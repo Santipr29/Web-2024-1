@@ -47,6 +47,11 @@
     width: 35px;
 }
 
+@media (min-width: 1023px) {
+    .add{
+        display: none;
+    }
+}
 
 .list{
     border: none;
