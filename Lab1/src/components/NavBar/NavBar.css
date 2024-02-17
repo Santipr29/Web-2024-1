@@ -1,9 +1,32 @@
-.main{
+.main-bar{
     display: flex;
     flex-direction: row;
+    width: 100vi;
+    height: 35px;
+    justify-content: space-between;
 }
- @media (max-width: 1024px) {
-    .main{
+
+.left-bar{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.center-bar{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.right-bar{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: end;
+}
+
+@media (max-width: 1023px) {
+    .main-bar{
         display: none;
     }
  }

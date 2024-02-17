@@ -39,7 +39,7 @@
 }
 
 @media (min-width: 1024px) {
-    .main-phone{
+    .navbar-phone{
         display: none;
     }
 }

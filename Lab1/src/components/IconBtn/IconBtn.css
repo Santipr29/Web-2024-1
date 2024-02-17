@@ -46,3 +46,54 @@
 .add img{
     width: 35px;
 }
+
+
+.list{
+    border: none;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.yt{
+    border: none;
+    background-color: white;
+}
+
+.microphone{
+    border: none;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.upload{
+    border: none;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.notifications{
+    border: none;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.profile{
+    border: none;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.profile img{
+    border-radius: 50%;
+}
+
+.search-bar{
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.search{
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
