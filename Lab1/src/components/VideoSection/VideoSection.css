@@ -1,7 +1,27 @@
-.categories{
-    display: none;
+@media (max-width: 1024px) {
+    .categories-desktop{
+        display: none;
+    }
+
+    .videos{
+        margin-top: 65px;
+    }
 }
 
 .videos{
-    margin-top: 65px;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.categories-desktop{
+    display: flex;
+    flex-direction: row;
+}
+
+.content-section{
+    width: 100vi;
 }

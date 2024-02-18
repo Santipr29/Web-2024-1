@@ -6,8 +6,8 @@ import "./VideoSection.css"
 export default function VideoSection(){
     return(
       <>
-      <section>
-        <section className="categories">
+      <section className="content-section">
+        <section className="categories-desktop">
           <CategoryBtn name="All"></CategoryBtn>
           <CategoryBtn name="Music"></CategoryBtn>
           <CategoryBtn name="Gaming"></CategoryBtn>
