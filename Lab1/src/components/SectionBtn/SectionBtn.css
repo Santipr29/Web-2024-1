@@ -17,3 +17,9 @@
     margin: 0;
     font-size: 12px;
 }
+
+@media (min-width: 1024px){
+    .profile-phone{
+        border-radius: 0;
+    }
+}
