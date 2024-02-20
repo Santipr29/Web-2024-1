@@ -1,9 +1,11 @@
 .sections-phone{
     display: flex;
     flex-direction: column;
-    width: 20vh;
+    align-items: center;
+    width: 72px;
     gap: 30px;
     margin-top: 30px;
+    margin-left: -6px;
 }
 
 @media (max-width: 1023px) {

@@ -21,6 +21,7 @@
 @media (min-width: 1024px){
     .profile-phone{
         border-radius: 0;
+        width: 100%;
     }
 
     .section-btn img{
@@ -29,7 +30,7 @@
     }
     
     .section-btn p{
-        margin: 0;
-        font-size: 12px;
+        margin-top: 6px;
+        font-size: 10px;
     }
 }
