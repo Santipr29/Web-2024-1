@@ -22,4 +22,14 @@
     .profile-phone{
         border-radius: 0;
     }
+
+    .section-btn img{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    .section-btn p{
+        margin: 0;
+        font-size: 12px;
+    }
 }
