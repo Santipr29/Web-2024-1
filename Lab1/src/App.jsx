@@ -20,7 +20,8 @@ export default function App(){
       <NavBar onClick={handleShowMenu}></NavBar>
       <section className="content">
         {
-          showMenu? <MoreOptions></MoreOptions>
+          showMenu 
+          ? <MoreOptions></MoreOptions>
           : <MainSections></MainSections>
         }
         <VideoSection></VideoSection>

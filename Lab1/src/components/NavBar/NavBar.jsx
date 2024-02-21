@@ -2,13 +2,19 @@ import React from 'react'
 import { IconBtn } from '../IconBtn/IconBtn'
 import "./NavBar.css"
 
-export default function NavBar(props){
-  const {onClick} = props
+export default function NavBar({onClick}){
+  const handleShowMenu = (e) => {
+    onClick()
+  }
     return(
       <>
       <section className="main-bar">
         <section className="left-bar">
-            <IconBtn clas="list" image="https://icons.veryicon.com/png/o/miscellaneous/linear-icon-45/hamburger-menu-5.png" onClick={()=>onClick()}></IconBtn>
+            <IconBtn clas="list" 
+                    image="https://icons.veryicon.com/png/o/miscellaneous/linear-icon-45/hamburger-menu-5.png" 
+                    onClick={handleShowMenu}>
+
+              </IconBtn>
             <IconBtn clas="yt" image="https://ongpng.com/wp-content/uploads/2023/04/3.youtube-logo-2416x776-1.png"></IconBtn>
         </section>
         <section className="center-bar">
