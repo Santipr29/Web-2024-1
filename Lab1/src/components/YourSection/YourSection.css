@@ -1,0 +1,14 @@
+.your-section{
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-section{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.your-section h2{
+    font-size: 16px;
+}

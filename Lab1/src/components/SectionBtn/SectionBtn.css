@@ -18,6 +18,16 @@
     font-size: 12px;
 }
 
+#sections-options{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#sections-options p{
+    font-size: 14px;
+}
+
 @media (min-width: 1024px){
     .profile-phone{
         border-radius: 0;

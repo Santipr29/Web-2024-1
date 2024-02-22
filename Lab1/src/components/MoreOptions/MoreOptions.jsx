@@ -5,11 +5,12 @@ import SubsSection from "../SubsSection/SubsSection"
 import ExploreSection from "../ExploreSection/ExploreSection"
 import MoreSection from "../MoreSection/MoreSection"
 import ConfigSection from "../ConfigSection/ConfigSection"
+import "./MoreOptions.css"
 
 export default function MoreOptions(){
     return(
       <>
-      <section>
+      <section className="more-options">
       <MainSections></MainSections>
       <YourSection></YourSection>
       <SubsSection></SubsSection>

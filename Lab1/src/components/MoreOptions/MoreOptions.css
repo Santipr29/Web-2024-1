@@ -1,0 +1,8 @@
+.more-options{
+    display: flex;
+    flex-direction: column;
+    height: 685px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 100%;
+}
