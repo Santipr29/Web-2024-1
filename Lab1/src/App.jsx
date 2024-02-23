@@ -24,7 +24,7 @@ export default function App(){
           ? <MoreOptions></MoreOptions>
           : <MainSections></MainSections>
         }
-        <VideoSection></VideoSection>
+        <VideoSection widht={ showMenu ? 'calc(100% - 240px)' : 'calc(100% - 90px)' }></VideoSection> 
       </section>
       </>
     )

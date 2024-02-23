@@ -3,10 +3,10 @@ import { VideoCard } from '../VideoCard/VideoCard'
 import { CategoryBtn } from '../CategoryBtn/CategoryBtn'
 import "./VideoSection.css"
 
-export default function VideoSection(){
+export default function VideoSection({widht}){
     return(
       <>
-      <section className="content-section">
+      <section style={{width: widht}} className="content-section">
         <section className="categories-desktop">
           <CategoryBtn name="All"></CategoryBtn>
           <CategoryBtn name="Music"></CategoryBtn>
