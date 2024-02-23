@@ -6,6 +6,10 @@
     .videos{
         margin-top: 65px;
     }
+
+    .content-section{
+        width: 100%;
+    }
 }
 
 @media (min-width: 1024px){
