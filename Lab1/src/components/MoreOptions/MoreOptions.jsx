@@ -1,5 +1,5 @@
 import React from "react"
-import MainSections from "../MainSections/MainSections"
+import HamburguerMainSection from "../HamburgerMainSection/HamburgerMainSection"
 import YourSection from "../YourSection/YourSection"
 import SubsSection from "../SubsSection/SubsSection"
 import ExploreSection from "../ExploreSection/ExploreSection"
@@ -11,7 +11,7 @@ export default function MoreOptions(){
     return(
       <>
       <section className="more-options">
-      <MainSections></MainSections>
+      <HamburguerMainSection></HamburguerMainSection>
       <YourSection></YourSection>
       <SubsSection></SubsSection>
       <ExploreSection></ExploreSection>
