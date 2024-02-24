@@ -58,6 +58,27 @@
     margin-top: 0;
 }
 
+#sections-subs{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 2px;
+    min-height: 40px;
+}
+
+#sections-subs img{
+    height: 25px;
+    width: 25px;
+    margin-left: 6px;
+    border-radius: 50%;
+}
+
+#sections-subs p{
+    font-size: 14px;
+    margin-left: 22px;
+    margin-top: 0;
+}
+
 @media (min-width: 1024px){
     .profile-phone{
         border-radius: 0;
