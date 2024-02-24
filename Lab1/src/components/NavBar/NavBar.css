@@ -1,15 +1,16 @@
 .main-bar{
     display: flex;
     flex-direction: row;
-    width: 95vi;
+    width: 97vi;
     height: 40px;
+    margin-top: 10px;
 }
 
 .left-bar{
     display: flex;
     flex-direction: row;
     width: 65%;
-    margin-left: 10px;
+    margin-left: 18px;
 }
 
 .center-bar{

@@ -6,6 +6,7 @@
 .content{
     display: flex;
     flex-direction: column;
+    height: 93vh;
 }
 
 @media (min-width: 1024px) {

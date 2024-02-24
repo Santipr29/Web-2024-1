@@ -20,6 +20,7 @@
         grid-template-columns: repeat(2, 1fr);
         height: 79vh;
         overflow-y: auto;
+        scrollbar-color: transparent transparent;
     }
 
     .categories-desktop{
@@ -29,6 +30,7 @@
         gap: 15px;
         margin-right: 18px;
         margin-left: 5px;
+        scrollbar-color: transparent transparent;
     }
 
     .content-section{
