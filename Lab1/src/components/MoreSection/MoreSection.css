@@ -1,8 +1,20 @@
 .yt-section{
     display: flex;
     flex-direction: column;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    margin-left: 5px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.btn-section{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
 }
 
 .yt-section h2{
     font-size: 16px;
+    margin-left: 12px;
+    margin-bottom: 8px;
 }
