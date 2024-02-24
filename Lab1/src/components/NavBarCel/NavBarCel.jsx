@@ -2,6 +2,7 @@ import React from 'react'
 import { IconBtn } from '../IconBtn/IconBtn'
 import { CategoryBtn } from '../CategoryBtn/CategoryBtn'
 import "./NavBarCel.css"
+import { categories } from '../../data/categories'
 
 export default function NavBarCel(){
     return(
@@ -18,18 +19,9 @@ export default function NavBarCel(){
           </section>
         </section>
         <section className="categories">
-            <CategoryBtn name="All"></CategoryBtn>
-            <CategoryBtn name="Music"></CategoryBtn>
-            <CategoryBtn name="Gaming"></CategoryBtn>
-            <CategoryBtn name="Mixes"></CategoryBtn>
-            <CategoryBtn name="LaLiga"></CategoryBtn>
-            <CategoryBtn name="EA Sports FC 24"></CategoryBtn>
-            <CategoryBtn name="FC Barcelona"></CategoryBtn>
-            <CategoryBtn name="Three-point field goal"></CategoryBtn>
-            <CategoryBtn name="Live"></CategoryBtn>
-            <CategoryBtn name="Recently uploaded"></CategoryBtn>
-            <CategoryBtn name="Watched"></CategoryBtn>
-            <CategoryBtn name="New to you"></CategoryBtn>
+        {categories.map((card, id)=>(
+          <CategoryBtn name={card.tittle} key={id}></CategoryBtn>
+        ))}
           </section>
         </section>
       </>
