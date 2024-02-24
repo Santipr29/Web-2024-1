@@ -8,9 +8,10 @@
     display: flex;
     flex-direction: row;
     background-color: white;
-    margin-left: -2px;
+    margin-left: 0;
     position: fixed;
     top: 0;
+    width: 100vi;
 }
 
 .categories{
