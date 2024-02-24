@@ -5,7 +5,6 @@
     width: 72px;
     gap: 30px;
     margin-top: 30px;
-    margin-left: -6px;
 }
 
 @media (max-width: 1023px) {
@@ -14,10 +13,10 @@
         flex-direction: row;
         width: 100vi;
         height: 40px;
-        justify-content: space-between;
         border-top: 1px solid grey;
+        justify-content: space-between;
         background-color: white;
         position: fixed;
-        margin-top: 784px;
+        margin-top: 95.4vh;
     }
 }
