@@ -1,10 +1,7 @@
-import React, {useState} from "react";
+import React from "react";
 
-export function Count (props){
-    const {counter} = props 
-    return(
-        <>
-        <p>{counter}</p>
-        </>
+export const Counter = ({count}) => {
+    return (
+      <h3 className="counter">{count} </h3>
     )
-}
+  }
