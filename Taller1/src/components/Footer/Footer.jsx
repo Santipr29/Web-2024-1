@@ -1,8 +1,9 @@
 import React from "react";
+import "./Footer.css"
 
 export const Footer = () => {
     return (
-      <section>  
+      <section className="footer">  
         <h1>Santiago Perez Ramirez</h1> 
       </section>
     )

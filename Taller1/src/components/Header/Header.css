@@ -1,13 +1,14 @@
 .header{
     display: flex;
     flex-direction: row;
-    width: 100vi;
+    width: 100%;
     justify-content: center;
     background-color: gray;
 }
 
 .header img{
-    width: 30vi;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    width: 25vi;
+    height: 8vh;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }

@@ -1,8 +1,10 @@
-import React from "react";
-import { useState } from "react";
+import React, { useState } from "react";
+import "./Body.css"
+
 import { Button } from "../Button/Button";
 import { Counter } from "../Counter/Counter";
 import { TeamCard } from "../TeamCard/TeamCard";
+
 import { point } from "../../data/point";
 import { fail } from "../../data/fail";
 import { teams1 } from "../../data/teams";
@@ -65,31 +67,33 @@ export const Body = () => {
     return (
         <>
         <section className="container">
-            <section className="gift-point">
+            <section className="show-gif">
                 <img src={randomGift?.gift}/>
             </section>
 
-            <section className="team-1">
-                <section>
-                    <TeamCard logo={randomTeam1?.logo} team={randomTeam1?.name}/>
-                    <Counter count={currentCounter} />
+            <section className="teams">
+                <section className="team-1">
+                    <section className="info-team">
+                        <TeamCard logo={randomTeam1?.logo} team={randomTeam1?.name}/>
+                        <Counter count={currentCounter} />
+                    </section>
+                    <section className="buttons-div">
+                        <Button title="-" type="substract" onClick={changeCounter}></Button>
+                        <Button title="Reset" type="reset" onClick={changeCounter}></Button>
+                        <Button title="+" type="add" onClick={changeCounter}></Button>
+                    </section>
                 </section>
-                <section className="buttons-div">
-                    <Button title="-" type="substract" onClick={changeCounter}></Button>
-                    <Button title="Reset" type="reset" onClick={changeCounter}></Button>
-                    <Button title="+" type="add" onClick={changeCounter}></Button>
-                </section>
-            </section>
 
-            <section className="team-2">
-                <section>
-                    <TeamCard logo={randomTeam2?.logo} team={randomTeam2?.name}/>
-                    <Counter count={currentCounter2} />
-                </section>
-                <section className="buttons-div">
-                    <Button title="-" type="substract2" onClick={changeCounter2}></Button>
-                    <Button title="Reset" type="reset" onClick={changeCounter2}></Button>
-                    <Button title="+" type="add2" onClick={changeCounter2}></Button>
+                <section className="team-2">
+                    <section className="info-team2">
+                        <TeamCard logo={randomTeam2?.logo} team={randomTeam2?.name} uid="team2-card"/>
+                        <Counter count={currentCounter2} />
+                    </section>
+                    <section className="buttons-div">
+                        <Button title="-" type="substract2" onClick={changeCounter2}></Button>
+                        <Button title="Reset" type="reset" onClick={changeCounter2}></Button>
+                        <Button title="+" type="add2" onClick={changeCounter2}></Button>
+                    </section>
                 </section>
             </section>
         </section>

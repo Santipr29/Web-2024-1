@@ -1,11 +1,12 @@
 import React from "react";
+import "./TeamCard.css"
 
 export const TeamCard = (props) => {
-    const {logo, team} = props
+    const {logo, team, uid} = props
     return (
-      <section>  
+      <section className="team-card" id={uid}>  
         <img src={logo}/>    
-        <h3>{team}</h3>
+        <p>{team}</p>
       </section>
     )
   }

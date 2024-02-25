@@ -1,0 +1,43 @@
+.container{
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.show-gif{
+    width: 90vi;
+    height: 45vi;
+    background-color: black;
+    margin: 0 auto;
+}
+
+.show-gif img{
+    min-width: 90vi;
+    max-width: 90vi;
+    min-height: 45vi;
+    max-height: 45vi;
+}
+
+.teams{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    width: 90vi;
+    height: 13.2vi;
+    background-color: black;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.info-team{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.info-team2{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
