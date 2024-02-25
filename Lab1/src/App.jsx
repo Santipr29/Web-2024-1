@@ -7,6 +7,11 @@ import MoreOptions from './components/MoreOptions/MoreOptions';
 import "./App.css";
 
 export default function App() {
+
+/**
+    *Using states to display the menu and make the content section shrink
+*/
+
   const [showMenu, setShowMenu] = useState(false);
   const [isWideScreen, setIsWideScreen] = useState(window.innerWidth > 1023);
 

@@ -5,7 +5,16 @@ import "./VideoSection.css"
 import { categories } from '../../data/categories'
 import { videos } from '../../data/videos'
 
+/**
+ * *YouTube content section (videos and categories)
+*/
+
 export default function VideoSection({widht}){
+
+/**
+    *The map is used to represent the categories and videos based on data
+*/
+
     return(
       <>
       <section style={{width: widht}} className="content-section">

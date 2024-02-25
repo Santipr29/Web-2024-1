@@ -4,7 +4,16 @@ import { CategoryBtn } from '../CategoryBtn/CategoryBtn'
 import "./NavBarCel.css"
 import { categories } from '../../data/categories'
 
+/**
+ * *Navigation bar for cell phone
+*/
+
 export default function NavBarCel(){
+
+/**
+    *The map is used to render the categories from a data
+*/
+
     return(
       <>
       <section className="navbar-phone">

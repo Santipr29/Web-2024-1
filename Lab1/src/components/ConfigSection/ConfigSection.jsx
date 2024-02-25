@@ -2,6 +2,10 @@ import React from "react"
 import { SectionBtn } from "../SectionBtn/SectionBtn"
 import "./ConfigSection.css"
 
+/**
+ * *Section where the YouTube settings are in the hamburger menu
+*/
+
 export default function ConfigSection(){
     return(
       <>

@@ -2,6 +2,11 @@ import React from "react"
 import { SectionBtn } from "../SectionBtn/SectionBtn"
 import "./HamburgerMainSection.css"
 
+/**
+ * *Section where the main YouTube categories are in the hamburger menu
+*/
+
+
 export default function HamburguerMainSection(){
 
     return(

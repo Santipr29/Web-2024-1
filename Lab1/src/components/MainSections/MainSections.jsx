@@ -3,7 +3,16 @@ import { SectionBtn } from "../SectionBtn/SectionBtn"
 import { IconBtn } from "../IconBtn/IconBtn"
 import "./MainSections.css"
 
+/**
+ * *Section with the main sections of YouTube
+*/
+
 export default function MainSections(){
+
+/**
+  *Function used so that the cell phone section in the you section has another image different from the desktop one
+*/
+
   const [isCellphoneScreen, setIsDesktopScreen] = useState(window.innerWidth < 1024);
 
   useEffect(() => {

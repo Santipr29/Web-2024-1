@@ -3,6 +3,10 @@ import { SectionBtn } from "../SectionBtn/SectionBtn"
 import "./YourSection.css"
 import { you } from "../../data/youSection"
 
+/**
+ * *User's own section to view video lists
+*/
+
 export default function YourSection(){
     return(
       <>

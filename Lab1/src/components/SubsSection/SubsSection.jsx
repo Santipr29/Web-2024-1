@@ -3,7 +3,17 @@ import { SectionBtn } from "../SectionBtn/SectionBtn"
 import "./SubsSection.css"
 import { subscriptions } from "../../data/subscriptions"
 
+/**
+ * *Section where the profiles to which the user is subscribed are
+*/
+
+
 export default function SubsSection(){
+
+/**
+    *The map is used to represent the profiles to which the user is subscribed based on data
+*/
+
     return(
       <>
       <section className="subs-section">

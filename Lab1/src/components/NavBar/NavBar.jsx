@@ -2,7 +2,16 @@ import React from 'react'
 import { IconBtn } from '../IconBtn/IconBtn'
 import "./NavBar.css"
 
+/**
+ * *Navigation bar for desktop
+*/
+
 export default function NavBar({onClick}){
+
+/**
+    *Function used so that the IconBtn can have the click action and thus make the hamburger menu display
+*/
+
   const handleShowMenu = (e) => {
     onClick()
   }

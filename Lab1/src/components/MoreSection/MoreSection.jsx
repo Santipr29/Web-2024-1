@@ -2,6 +2,10 @@ import React from "react"
 import { SectionBtn } from "../SectionBtn/SectionBtn"
 import "./MoreSection.css"
 
+/**
+ * *Section where the different YouTube contents are shown
+*/
+
 export default function MoreSection(){
     return(
       <>

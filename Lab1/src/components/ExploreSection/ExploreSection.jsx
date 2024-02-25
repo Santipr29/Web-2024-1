@@ -3,6 +3,11 @@ import { SectionBtn } from "../SectionBtn/SectionBtn"
 import "./ExploreSection.css"
 import { explore } from "../../data/explore"
 
+/**
+ * *Section where there are different categories to explore on YouTube in the hamburger menu
+*/
+
+
 export default function ExploreSection(){
     return(
       <>

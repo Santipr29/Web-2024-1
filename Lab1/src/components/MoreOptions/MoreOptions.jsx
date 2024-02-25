@@ -7,6 +7,10 @@ import MoreSection from "../MoreSection/MoreSection"
 import ConfigSection from "../ConfigSection/ConfigSection"
 import "./MoreOptions.css"
 
+/**
+ * *Hamburger menu section for desktop
+*/
+
 export default function MoreOptions(){
     return(
       <>
