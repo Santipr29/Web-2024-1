@@ -13,6 +13,7 @@ export const Body = () => {
     const [currentCounter2, setCurrentCounter2] = useState(0);
     const [randomTeam1, setRandomTeam1] = useState(null);
     const [randomTeam2, setRandomTeam2] = useState(null);
+    const [randomGift, setRandomGift] = useState(null);
 
     const selectRandomTeams = () => {
         const randomIndex1 = Math.floor(Math.random() * teams1.length);
@@ -21,27 +22,38 @@ export const Body = () => {
         setRandomTeam2(teams2[randomIndex2]);
     };
 
+    const selectRandomGift = (type) => {
+        const randomIndex = Math.floor(Math.random() * (type === "fail" ? fail.length : point.length));
+        setRandomGift(type === "fail" ? fail[randomIndex] : point[randomIndex]);
+    };
+
     const changeCounter = (type) => {
         if (type === "add") {
             setCurrentCounter(currentCounter + 1);
+            selectRandomGift("point");
         } else if (type === "substract" && currentCounter > 0) {
             setCurrentCounter(currentCounter - 1);
+            selectRandomGift("fail");
         } else if (type === "reset") {
             setCurrentCounter(0);
             setCurrentCounter2(0);
             selectRandomTeams();
+            setRandomGift(null);
         }
     };
 
     const changeCounter2 = (type) => {
         if (type === "add2") {
             setCurrentCounter2(currentCounter2 + 1);
+            selectRandomGift("point");
         } else if (type === "substract2" && currentCounter2 > 0) {
             setCurrentCounter2(currentCounter2 - 1);
+            selectRandomGift("fail");
         } else if (type === "reset") {
             setCurrentCounter(0);
             setCurrentCounter2(0);
             selectRandomTeams();
+            setRandomGift(null);
         }
     };
 
@@ -54,7 +66,7 @@ export const Body = () => {
         <>
         <section className="container">
             <section className="gift-point">
-                <img src=""/>
+                <img src={randomGift?.gift}/>
             </section>
 
             <section className="team-1">
