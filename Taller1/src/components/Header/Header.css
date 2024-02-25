@@ -1,0 +1,13 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    width: 100vi;
+    justify-content: center;
+    background-color: gray;
+}
+
+.header img{
+    width: 30vi;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
