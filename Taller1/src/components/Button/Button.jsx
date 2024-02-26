@@ -1,9 +1,10 @@
 import React from "react";
+import "./Button.css"
 
 export const Button = (props) => {
-    const {title,type,onClick} = props
+    const {title, type, onClick, uid} = props
 
     return (
-      <button className="button" type={type} onClick={()=> {onClick(type)}}>{title}</button>
+      <button className="button" id={uid} type={type} onClick={()=> {onClick(type)}}>{title}</button>
     )
 }

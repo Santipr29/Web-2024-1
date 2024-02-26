@@ -79,7 +79,7 @@ export const teams2 = [
     },
     {
         id: crypto.randomUUID(),
-        logo: "https://seeklogo.com/images/M/miami-heat-logo-36DD469E8A-seeklogo.com.png",
+        logo: "https://www.pinclipart.com/picdir/big/182-1825443_miami-heat-miami-heat-logo-espn-clipart.png",
         name: "Miami Heat",
     }
 ]

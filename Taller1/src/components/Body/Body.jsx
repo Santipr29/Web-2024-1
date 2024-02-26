@@ -73,12 +73,12 @@ export const Body = () => {
                         <Counter count={currentCounter} />
                     </section>
                     <section className="buttons-section">
-                        <Button title="fail" type="substract" onClick={changeCounter}></Button>
-                        <Button title="point" type="add" onClick={changeCounter}></Button>
+                        <Button title="FAIL" uid="substract" type="substract" onClick={changeCounter}></Button>
+                        <Button title="POINT" uid="add" type="add" onClick={changeCounter}></Button>
                     </section>
                 </section>
 
-                <Button title="Reset" type="reset" onClick={changeCounter}></Button>
+                <Button title="Reset" uid="reset" type="reset" onClick={changeCounter}></Button>
 
                 <section className="team-2">
                     <section className="info-team2">
@@ -86,8 +86,8 @@ export const Body = () => {
                         <Counter count={currentCounter2} />
                     </section>
                     <section className="buttons-section">
-                        <Button title="fail" type="substract2" onClick={changeCounter2}></Button>
-                        <Button title="point" type="add2" onClick={changeCounter2}></Button>
+                        <Button title="FAIL" uid="substract" type="substract2" onClick={changeCounter2}></Button>
+                        <Button title="POINT" uid="add" type="add2" onClick={changeCounter2}></Button>
                     </section>
                 </section>
             </section>

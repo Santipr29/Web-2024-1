@@ -1,0 +1,140 @@
+#add {
+    --color: #15aa02;
+    font-family: inherit;
+    display: inline-block;
+    width: 10vi;
+    height: 5vh;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid var(--color);
+    transition: color .5s;
+    z-index: 1;
+    font-size: 14px;
+    border-radius: 6px;
+    font-weight: 500;
+    color: var(--color);
+   }
+   
+   #add:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--color);
+    height: 150px;
+    width: 200px;
+    border-radius: 50%;
+   }
+   
+   #add:hover {
+    color: #fff;
+   }
+   
+   #add:before {
+    top: 100%;
+    left: 100%;
+    transition: all .7s;
+   }
+   
+   #add:hover:before {
+    top: -30px;
+    left: -30px;
+   }
+   
+   #add:active:before {
+    background: #15aa02;
+    transition: background 0s;
+   }
+
+#substract {
+    --color: rgb(184, 1, 1);
+    font-family: inherit;
+    display: inline-block;
+    width: 10vi;
+    height: 5vh;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid var(--color);
+    transition: color .5s;
+    z-index: 1;
+    font-size: 17px;
+    border-radius: 6px;
+    font-weight: 500;
+    color: var(--color);
+   }
+   
+   #substract:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--color);
+    height: 150px;
+    width: 200px;
+    border-radius: 50%;
+   }
+   
+   #substract:hover {
+    color: #fff;
+   }
+   
+   #substract:before {
+    top: 100%;
+    left: 100%;
+    transition: all .7s;
+   }
+   
+   #substract:hover:before {
+    top: -30px;
+    left: -30px;
+   }
+   
+   #substract:active:before {
+    background: rgb(184, 1, 1);
+    transition: background 0s;
+   }
+
+#reset {
+    --color: #15aa02;
+    font-family: inherit;
+    display: inline-block;
+    width: 10vi;
+    height: 5vh;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid var(--color);
+    transition: color .5s;
+    z-index: 1;
+    font-size: 14px;
+    border-radius: 6px;
+    font-weight: 500;
+    color: var(--color);
+   }
+   
+   #reset:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--color);
+    height: 150px;
+    width: 200px;
+    border-radius: 50%;
+   }
+   
+   #reset:hover {
+    color: #fff;
+   }
+   
+   #reset:before {
+    top: 100%;
+    left: 100%;
+    transition: all .7s;
+   }
+   
+   #reset:hover:before {
+    top: -30px;
+    left: -30px;
+   }
+   
+   #reset:active:before {
+    background: #15aa02;
+    transition: background 0s;
+   }
