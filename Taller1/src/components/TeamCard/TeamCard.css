@@ -19,3 +19,7 @@
     margin-right: 10px;
     font-size: 25px;
 }
+
+#team2-card p{
+    text-align: end;
+}

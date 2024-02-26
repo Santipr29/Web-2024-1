@@ -2,12 +2,13 @@
     display: flex;
     flex-direction: row;
     width: 100%;
-    justify-content: center;
+    justify-content: end;
     background-color: gray;
 }
 
-.footer h1{
-    font-size: 30px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+.footer h3{
+    font-size: 14px;
+    margin-top: 30px;
+    margin-bottom: 8px;
+    margin-right: 20px;
 }

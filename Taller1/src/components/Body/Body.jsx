@@ -51,11 +51,6 @@ export const Body = () => {
         } else if (type === "substract2" && currentCounter2 > 0) {
             setCurrentCounter2(currentCounter2 - 1);
             selectRandomGift("fail");
-        } else if (type === "reset") {
-            setCurrentCounter(0);
-            setCurrentCounter2(0);
-            selectRandomTeams();
-            setRandomGift(null);
         }
     };
 
@@ -77,22 +72,22 @@ export const Body = () => {
                         <TeamCard logo={randomTeam1?.logo} team={randomTeam1?.name}/>
                         <Counter count={currentCounter} />
                     </section>
-                    <section className="buttons-div">
-                        <Button title="-" type="substract" onClick={changeCounter}></Button>
-                        <Button title="Reset" type="reset" onClick={changeCounter}></Button>
-                        <Button title="+" type="add" onClick={changeCounter}></Button>
+                    <section className="buttons-section">
+                        <Button title="fail" type="substract" onClick={changeCounter}></Button>
+                        <Button title="point" type="add" onClick={changeCounter}></Button>
                     </section>
                 </section>
+
+                <Button title="Reset" type="reset" onClick={changeCounter}></Button>
 
                 <section className="team-2">
                     <section className="info-team2">
                         <TeamCard logo={randomTeam2?.logo} team={randomTeam2?.name} uid="team2-card"/>
                         <Counter count={currentCounter2} />
                     </section>
-                    <section className="buttons-div">
-                        <Button title="-" type="substract2" onClick={changeCounter2}></Button>
-                        <Button title="Reset" type="reset" onClick={changeCounter2}></Button>
-                        <Button title="+" type="add2" onClick={changeCounter2}></Button>
+                    <section className="buttons-section">
+                        <Button title="fail" type="substract2" onClick={changeCounter2}></Button>
+                        <Button title="point" type="add2" onClick={changeCounter2}></Button>
                     </section>
                 </section>
             </section>

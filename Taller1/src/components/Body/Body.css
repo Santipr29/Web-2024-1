@@ -7,7 +7,7 @@
 
 .show-gif{
     width: 90vi;
-    height: 45vi;
+    height: 60.6vh;
     background-color: black;
     margin: 0 auto;
 }
@@ -15,8 +15,8 @@
 .show-gif img{
     min-width: 90vi;
     max-width: 90vi;
-    min-height: 45vi;
-    max-height: 45vi;
+    min-height: 60.6vh;
+    max-height: 60.6vh;
 }
 
 .teams{
@@ -24,10 +24,27 @@
     display: flex;
     flex-direction: row;
     width: 90vi;
-    height: 13.2vi;
+    height: 22vh;
     background-color: black;
     margin: 0 auto;
     justify-content: space-between;
+    align-items: center;
+}
+
+.team-1{
+    margin-left: 20px;
+    width: 30vi;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.team-2{
+    margin-right: 20px;
+    width: 30vi;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .info-team{
@@ -40,4 +57,12 @@
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
+}
+
+.buttons-section{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 15px;
+    width: 100%;
 }
