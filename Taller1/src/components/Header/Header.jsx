@@ -4,7 +4,7 @@ import "./Header.css"
 export const Header = () => {
     return (
       <section className="header">  
-        <img src="https://www.pngfind.com/pngs/b/615-6158373_games-1-3-5-7-of-raptors-vs.png"/>    
+        <img src="https://images.milledcdn.com/2018-04-15/Q8Se-oOHPyQ1zkpK/0Z27gEZSvU55.png"/>    
       </section>
     )
 }

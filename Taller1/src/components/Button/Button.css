@@ -93,7 +93,7 @@
    }
 
 #reset {
-    --color: #15aa02;
+    --color: #000dc4;
     font-family: inherit;
     display: inline-block;
     width: 10vi;
@@ -120,7 +120,7 @@
    }
    
    #reset:hover {
-    color: #fff;
+    color: rgb(255, 43, 43);
    }
    
    #reset:before {

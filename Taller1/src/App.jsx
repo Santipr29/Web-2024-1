@@ -8,9 +8,12 @@ export default function App() {
 
   return (
     <>
+    <section className="container-app">
     <Header></Header>
     <Body></Body>
     <Footer></Footer>
+    </section>
     </>
+    
   )
 }

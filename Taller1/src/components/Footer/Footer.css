@@ -3,10 +3,10 @@
     flex-direction: row;
     width: 100%;
     justify-content: end;
-    background-color: gray;
 }
 
 .footer h3{
+    color: white;
     font-size: 14px;
     margin-top: 30px;
     margin-bottom: 8px;
