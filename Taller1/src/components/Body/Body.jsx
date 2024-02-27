@@ -78,7 +78,7 @@ export const Body = () => {
                     </section>
                 </section>
 
-                <Button title="Reset" uid="reset" type="reset" onClick={changeCounter}></Button>
+                <Button title="New Match" uid="reset" type="reset" onClick={changeCounter}></Button>
 
                 <section className="team-2">
                     <section className="info-team2">
