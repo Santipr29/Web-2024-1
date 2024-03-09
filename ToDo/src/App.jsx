@@ -4,7 +4,8 @@ import {Header, Form, Filter, Task, Footer} from './Components/index'
 
 function App() {
 
-  const [tasks, setTasks] = useState([])
+  const [tasks, setTasks] = useState([]);
+  const [filter, setFilter] = useState('All');
 
   function AddTask (taskName) {
     console.log(taskName); 
@@ -24,23 +25,28 @@ function App() {
     );
   };
 
+  const filteredTasks = tasks.filter(task => {
+    if (filter === 'All') return true;
+    if (filter === 'Completed') return task.done;
+    if (filter === 'Pending') return !task.done;
+    return false;
+  });
+
   return (
     <>
       <Header/>
       <Form onSubmit={AddTask} />
-      <Filter/>
+      <Filter onChangeFilter={setFilter}/>
       <section className='BigContainer'>
-      {tasks.map(({ name, id, done }) => {
-        return (
+        {filteredTasks.map(({ name, id, done }) => (
           <div key={id}>
             <Task
-              titleTask={name} 
-              done={done} 
-              onToggle={() => handleToggleTask(id)}  
+              titleTask={name}
+              done={done}
+              onToggle={() => handleToggleTask(id)}
             />
           </div>
-        )
-      })}
+        ))}
       </section>
       <Footer/>
     </>
