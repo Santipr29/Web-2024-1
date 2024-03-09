@@ -6,26 +6,22 @@ function App() {
 
   const [tasks, setTasks] = useState([])
 
-
-function AddTask (taskName) {
-  console.log(taskName); 
-  const newTask = {
-  id: crypto.randomUUID(),
-  name: taskName,
-  done: false
-
- }
- setTasks(prevArray => [...prevArray, newTask])
-}
-
-
+  function AddTask (taskName) {
+    console.log(taskName); 
+    const newTask = {
+    id: crypto.randomUUID(),
+    name: taskName,
+    done: false
+  }
+  setTasks(prevArray => [...prevArray, newTask])
+  }
 
   return (
     <>
       <Header/>
       <Form onSubmit={AddTask} />
       <Filter/>
-      <div className='BigContainer'>
+      <section className='BigContainer'>
       {tasks.map(({ name,id }) => {
         return (
           <div key={id}>
@@ -33,7 +29,7 @@ function AddTask (taskName) {
           </div>
         )
       })}
-    </div>
+    </section>
       <Footer/>
     </>
   )
