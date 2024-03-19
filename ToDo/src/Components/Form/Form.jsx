@@ -12,7 +12,11 @@ const handleTaksInput = (e) => {
 
 const handleTaks = (e) => {
     e.preventDefault();
-    onSubmit(taskInput); }
+    onSubmit(taskInput); 
+    setTaskInput(""); 
+    
+} 
+ const submitIsDisable = taskInput.trim().length === 0
 
     return (
         <section>
@@ -22,9 +26,12 @@ const handleTaks = (e) => {
                         value={taskInput}
                         onChange={handleTaksInput}
                         className="form" 
-                        placeholder="Add a Task">
+                        placeholder="Add a Task"
+                        >
                     </input>
-                    <button type="submit"> add Task </button>
+                    <button type="submit" disabled= {submitIsDisable}> 
+                    add Task
+                     </button>
                 </div>
             </form>
         </section>
