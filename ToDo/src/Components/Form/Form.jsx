@@ -1,7 +1,11 @@
 import { useState } from "react";
 import './form.css'
+import { useTask } from "../../Hooks/useTask"
 
-export function Form ({onSubmit}){
+export function Form (){
+const {
+    AddTask,
+} = useTask()
     
 const [taskInput, setTaskInput] = useState('')
 
@@ -12,7 +16,7 @@ const handleTaksInput = (e) => {
 
 const handleTaks = (e) => {
     e.preventDefault();
-    onSubmit(taskInput); 
+    AddTask(taskInput); 
     setTaskInput(""); 
     
 } 
