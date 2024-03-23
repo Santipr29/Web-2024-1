@@ -5,7 +5,8 @@ export const reducerTask = (tasks, action) => {
 
         const newTask = {
             id: crypto.randomUUID(),
-            name: action.payload,
+            name: action.payload.taskName,
+            date: action.payload.taskDate,
             completed: false
           }
           

@@ -14,10 +14,11 @@ export function TasksList(){
     
     const getGetTaskList = (hasTasks) =>  {
       return hasTasks
-              ? (filteredTasks.map(({ name, id, done }) => (
+              ? (filteredTasks.map(({ name, date, id, done }) => (
                 <div key={id}>
                   <Task
                     titleTask={name}
+                    dateTask={date}
                     done={done}
                     onToggle={() => handleToggleTask(id)}
                     onDelete={() => deleteTask(id)}

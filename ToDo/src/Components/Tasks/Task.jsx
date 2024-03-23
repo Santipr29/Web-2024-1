@@ -5,6 +5,7 @@ export function Task (props) {
 
   const { 
     titleTask,
+    dateTask,
     done, 
     onToggle,
     onDelete 
@@ -22,6 +23,7 @@ export function Task (props) {
         onChange={handleCheckboxChange} 
       />
       <h2>{titleTask}</h2>
+      <p>Fecha de entrega: {dateTask}</p>
       < Button title="Delete" 
               onClick={onDelete}
       />

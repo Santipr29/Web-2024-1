@@ -14,11 +14,14 @@ export function TaskContextProvider ({children}) {
      window.localStorage.setItem("tasks", JSON.stringify(tasks));
   },[tasks]);
 
-  const AddTask = (taskName) => { 
+  const AddTask = (taskName, taskDate) => { 
 
     dispatchTasks({
       type: TASK_ACTIONS.CREATE_TASK,
-      payload: taskName
+      payload: {
+        taskName,
+        taskDate
+      }
     })
   }
 

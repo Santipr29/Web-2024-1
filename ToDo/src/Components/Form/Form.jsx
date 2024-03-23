@@ -8,19 +8,26 @@ const {
 } = useTask()
     
 const [taskInput, setTaskInput] = useState('')
+const [dateInput, setDateInput] = useState('')
 
 const handleTaksInput = (e) => {
     e.preventDefault();
     setTaskInput(e.target.value);
 };
 
+const handleDateInput = (e) => {
+    e.preventDefault();
+    setDateInput(e.target.value);
+};
+
 const handleTaks = (e) => {
     e.preventDefault();
-    AddTask(taskInput); 
+    AddTask(taskInput, dateInput); 
     setTaskInput(""); 
-    
-} 
- const submitIsDisable = taskInput.trim().length === 0
+    setDateInput(""); 
+}
+
+ const submitIsDisable = taskInput.trim().length === 0 || dateInput.trim().length === 0;
 
     return (
         <section>
@@ -32,6 +39,11 @@ const handleTaks = (e) => {
                         className="form" 
                         placeholder="Add a Task"
                         >
+                    </input>
+                    <input
+                        type="date"
+                        value={dateInput}
+                        onChange={handleDateInput}>
                     </input>
                     <button type="submit" disabled= {submitIsDisable}> 
                     add Task
