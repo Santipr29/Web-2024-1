@@ -1,52 +1,49 @@
-import { useState, useEffect } from "react";
-
+import { useReducer, useEffect, useState } from "react";
 import { TaskContext } from "./TaskContext";
+import { TASK_ACTIONS } from "../Const/TaskAction";
+import { reducerTask } from "../Reducers/TasksReducers";
 
 const initTasks = JSON.parse(window.localStorage.getItem("tasks")) ?? [] 
 
 export function TaskContextProvider ({children}) {
 
-  const [tasks, setTasks] = useState(initTasks);
+  const [tasks, dispatchTasks] = useReducer(reducerTask,initTasks);
   const [filter, setFilter] = useState('All');
   
   useEffect(() => {
      window.localStorage.setItem("tasks", JSON.stringify(tasks));
   },[tasks]);
 
-  function AddTask (taskName) {
-    console.log(taskName); 
-    const newTask = {
-    id: crypto.randomUUID(),
-    name: taskName,
-    done: false
-  }
-  setTasks(prevArray => [...prevArray, newTask])
+  const AddTask = (taskName) => { 
+
+    dispatchTasks({
+      type: TASK_ACTIONS.CREATE_TASK,
+      payload: taskName
+    })
   }
 
   const deleteTask = (taskId) => {
-    setTasks(prevTasks =>
-      prevTasks.filter(task => task.id !== taskId)
-    );
+    dispatchTasks({
+      type: TASK_ACTIONS.DELETE_TASK,
+      payload: taskId });
   };
 
   const deleteAllTask = () => {
-    setTasks(prevTasks => 
-      prevTasks.filter(task => !task.done))
+    dispatchTasks({type: TASK_ACTIONS.DELETE_ALL_TASK})
   }
 
   const handleToggleTask = (taskId) => { 
-    setTasks(prevTasks =>
-      prevTasks.map(task =>
-        task.id === taskId ? { ...task, done: !task.done } : task
-      )
-    );
+    dispatchTasks({
+    type:  TASK_ACTIONS.HANDLE_TOGGLE_TASK,
+    payload: taskId
+    })
   };
 
-  const getCompletedCount = () => {
+  const allTaskCount = () => {
     return tasks.filter(task => task).length;
   };
 
-  const countUncompletedTask = () => {
+  const completedTaskCount = () => {
     return tasks.filter(task  => task.done).length;
   }  
 
@@ -55,6 +52,7 @@ export function TaskContextProvider ({children}) {
     if (filter === 'Pending') return !task.done;
     return task;
   });
+
 
   return(
     <TaskContext.Provider value = {{
@@ -65,10 +63,9 @@ export function TaskContextProvider ({children}) {
         handleToggleTask,
         filter,
         setFilter,
-        getCompletedCount,
-        countUncompletedTask,
+        allTaskCount,
+        completedTaskCount,
         filteredTasks
-
     }}> 
     {children}
     </TaskContext.Provider>
