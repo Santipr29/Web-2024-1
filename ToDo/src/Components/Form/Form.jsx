@@ -30,26 +30,27 @@ const handleTaks = (e) => {
  const submitIsDisable = taskInput.trim().length === 0 || dateInput.trim().length === 0;
 
     return (
-        <section>
-            <form onSubmit={handleTaks}> 
-                <div className='container-form'>
+            <form onSubmit={handleTaks}>
+                <div className="inputs-div"> 
                     <input
                         value={taskInput}
                         onChange={handleTaksInput}
-                        className="form" 
-                        placeholder="Add a Task"
-                        >
+                        className="input-task" 
+                        placeholder="Add a Task">
                     </input>
                     <input
                         type="date"
+                        className="input-task"
                         value={dateInput}
                         onChange={handleDateInput}>
                     </input>
-                    <button type="submit" disabled= {submitIsDisable}> 
-                    add Task
-                     </button>
                 </div>
+                <button 
+                    type="submit"
+                    className={`submit-btn ${submitIsDisable ? 'disabled-btn' : ''}`}
+                    disabled= {submitIsDisable}> 
+                    add Task
+                </button>
             </form>
-        </section>
     )
 }

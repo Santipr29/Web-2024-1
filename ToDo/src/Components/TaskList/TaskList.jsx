@@ -1,5 +1,6 @@
 import { Task } from "../Tasks/Task"
 import { useTask } from "../../Hooks/useTask"
+import "./TaskList.css"
 
 export function TasksList(){
     
@@ -14,17 +15,21 @@ export function TasksList(){
     
     const getGetTaskList = (hasTasks) =>  {
       return hasTasks
-              ? (filteredTasks.map(({ name, date, id, done }) => (
-                <div key={id}>
-                  <Task
-                    titleTask={name}
-                    dateTask={date}
-                    done={done}
-                    onToggle={() => handleToggleTask(id)}
-                    onDelete={() => deleteTask(id)}
-                  />
-                </div>
-              )))
+              ?(
+                <section className="task-list">
+                  {filteredTasks.map(({ name, date, id, done }) => (
+                    <div key={id}>
+                      <Task
+                        titleTask={name}
+                        dateTask={date}
+                        done={done}
+                        onToggle={() => handleToggleTask(id)}
+                        onDelete={() => deleteTask(id)}
+                      />
+                    </div>
+                  ))}
+                </section>
+              )
               : <p>No hay tareas</p>
     }
     

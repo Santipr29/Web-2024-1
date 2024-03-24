@@ -1,26 +1,30 @@
-.containerForm{
+form{
     display: flex;
-    justify-content: center;
-    flex-direction: row;
-    background-color: gray;
-    width: 40%;
-    height: 50px;
-    align-items: center;
-    margin-left: 30%;
-
+    background-color: white;
+    width: 50vw;
+    justify-content: space-between;
+    margin-top: 5vh;
 }
-.form{
-    margin-top: 20px;
+
+.inputs-div{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    gap: 10px;
+    width: 70%;
+}
+
+.input-task{
     border-radius: 5px;
-    margin-right: 50px;
     height: 25px;
     text-align: center;
-    margin-bottom: 20px;
-    
-    
-  
+    font-size: 14px;
 }
 
-.ButtonTask{
-    margin-top: 20px;
+.submit-btn{
+    background-color: green;
+}
+
+.disabled-btn{
+    background-color: grey;
 }
