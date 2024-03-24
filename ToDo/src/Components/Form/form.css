@@ -31,3 +31,28 @@ form{
     background-color: grey;
     margin-right: 20px;
 }
+
+@media (max-width: 800px) {
+    form{
+        display: flex;
+        flex-direction: column;
+        width: 85vw;
+        margin-top: 2vh;
+    }
+
+    .inputs-div{
+        width: 80%;
+    }
+
+    .submit-btn{
+        background-color: green;
+        margin: 0;
+        margin-bottom: 15px;
+    }
+    
+    .disabled-btn{
+        background-color: grey;
+        margin: 0;
+        margin-bottom: 15px;
+    }
+ }

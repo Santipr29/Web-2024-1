@@ -12,3 +12,11 @@ footer{
 p{
     font-size: 16px;
 }
+
+@media (max-width: 800px) {
+    footer{
+        gap: 30px;
+        width: 85vw;
+        height: 8vh;
+    }
+}
