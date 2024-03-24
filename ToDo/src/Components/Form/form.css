@@ -3,6 +3,7 @@ form{
     background-color: white;
     width: 50vw;
     justify-content: space-between;
+    align-items: center;
     margin-top: 5vh;
 }
 
@@ -23,8 +24,10 @@ form{
 
 .submit-btn{
     background-color: green;
+    margin-right: 20px;
 }
 
 .disabled-btn{
     background-color: grey;
+    margin-right: 20px;
 }
