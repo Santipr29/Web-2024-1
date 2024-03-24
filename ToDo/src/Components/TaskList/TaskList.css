@@ -7,6 +7,13 @@
     overflow-y: auto;
 }
 
+.task-list p{
+    margin: 0 auto;
+    margin-top: 16vh;
+    font-size: 18px;
+    font-weight: bold;
+}
+
 .task-list::-webkit-scrollbar {
     width: 8px; 
     background-color: transparent; 

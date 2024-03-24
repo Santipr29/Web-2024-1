@@ -30,7 +30,10 @@ export function TasksList(){
                   ))}
                 </section>
               )
-              : <p>No hay tareas</p>
+              : 
+              <section className="task-list">
+              <p>No tasks yet</p>
+              </section>
     }
     
     return getGetTaskList(hasTasks)
