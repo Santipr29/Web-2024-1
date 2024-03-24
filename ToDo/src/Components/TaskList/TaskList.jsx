@@ -32,7 +32,7 @@ export function TasksList(){
               )
               : 
               <section className="task-list">
-              <p>No tasks yet</p>
+              <p className="mesage">No tasks yet</p>
               </section>
     }
     
