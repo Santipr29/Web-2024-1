@@ -5,7 +5,8 @@ footer{
     justify-content: center;
     gap: 30px;
     width: 50vw;
-    background-color: wheat;
+    background-color: rgb(203, 151, 252);
+    box-shadow: 0 0 .4vw rgba(115, 19, 240, 0.5), 0 0 0 .15vw transparent;
     height: 8vh;
 }
 

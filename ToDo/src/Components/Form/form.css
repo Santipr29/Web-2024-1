@@ -20,15 +20,29 @@ form{
     height: 25px;
     text-align: center;
     font-size: 14px;
+    color: #000000;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 .4vw rgba(115, 19, 240, 0.5), 0 0 0 .15vw transparent;
+    border-radius: 0.4vw;
+    border: none;
+    outline: none;
+    padding: 0.4vw;
+    transition: .4s;
 }
 
 .submit-btn{
-    background-color: green;
+    background-color: rgb(203, 151, 252);
+    box-shadow: 0 0 .4vw rgba(115, 19, 240, 0.5), 0 0 0 .15vw transparent;
+    border-radius: 0.4vw;
+    border: none;
+    outline: none;
+    padding: 0.4vw;
+    transition: .4s;
     margin-right: 20px;
 }
 
 .disabled-btn{
-    background-color: grey;
+    background-color: rgb(207, 207, 207);
     margin-right: 20px;
 }
 
@@ -45,13 +59,18 @@ form{
     }
 
     .submit-btn{
-        background-color: green;
+        background-color: rgb(203, 151, 252);
+        box-shadow: 0 0 .4vw rgba(115, 19, 240, 0.5), 0 0 0 .15vw transparent;
+        border-radius: 0.4vw;
+        border: none;
+        outline: none;
         margin: 0;
         margin-bottom: 15px;
     }
     
     .disabled-btn{
-        background-color: grey;
+        background-color: rgb(207, 207, 207);
+      
         margin: 0;
         margin-bottom: 15px;
     }
